@@ -1,0 +1,6 @@
+-r requirements.txt
+pytest>=8.0
+build>=1.2
+twine>=5.0
+notebook>=7.0
+ipykernel>=6.0

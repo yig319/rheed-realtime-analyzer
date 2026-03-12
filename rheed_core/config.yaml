@@ -1,0 +1,35 @@
+runtime:
+  duration_s: 20.0
+  loop_sleep_s: 0.01
+
+logging:
+  path: logs/events.jsonl
+
+preprocess:
+  trend_window: 64
+  clip_sigma: 4.0
+  median_kernel_size: 5
+  fft_band: [0.05, 5.0]
+  sample_rate_hz: 20.0
+  fft_window: 128
+
+state:
+  max_points: 400
+  min_period_s: 0.2
+  max_period_s: 30.0
+  tau_peak_prominence: 0.05
+  tau_min_points: 8
+
+policy:
+  drift_threshold: 8.0
+  bad_frame_limit: 5
+  period_cv_threshold: 0.2
+  tau_cv_threshold: 0.35
+  advisory_mode: true
+
+dummy:
+  sample_rate_hz: 20.0
+  frame_rate_hz: 2.0
+  osc_period_s: 4.0
+  noise_std: 0.15
+  seed: 123
