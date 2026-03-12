@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rheed-realtime-analyzer"
-version = "0.1.0"
+version = "0.2.0"
 description = "Sidecar analytics framework for real-time RHEED monitoring"
 readme = "README.md"
 requires-python = ">=3.10"
